@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChallangesViewController: UIViewController {
+class ChallengesViewController: UIViewController {
     
     @IBOutlet weak var arChallenge: UIStackView!
     @IBOutlet weak var guestBookChallenge: UIStackView!
@@ -57,8 +57,8 @@ class ChallangesViewController: UIViewController {
             controller.detail = challenges[5]
         }
         
-//        self.navigationController?.pushViewController(controller, animated: true)
-        self.present(controller, animated: true, completion: nil)
+//        self.present(controller, animated: true, completion: nil)
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
     /*
